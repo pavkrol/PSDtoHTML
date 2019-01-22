@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300|Quicksand:300,400,700" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <title>WebDev Challenge 8</title>
+</head>
+<body>
+    <div class="header-container">
+        <header class="header">
+            <img class="header__logo" src="IMG/logo.png" alt="company logo">
+            <img class="header__social" src="IMG/facebook.png" alt="facebook logo">
+            <img class="header__social" src="IMG/instagram.png" alt="instagram logo">
+            <img class="header__social" src="IMG/twitter.png" alt="twitter logo">
+            <img class="header__social" src="IMG/linkedin.png" alt="linkedin logo">
+            <nav class="header__nav">
+                <button class="ham"></button>
+                <span>Menu</span>
+                <ul class="menu-list">
+                    <li class="menu__item"><a href="#team">Our Team</a></li>
+                    <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu__item"><a href="#brands">Our Customers</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section class="topdesigners">
+        <div class="topdesigners__wrapper">
+            <h1 class="topdesigners__subtitle"><span class="separator"></span>Need our help?<span class="separator"></span></h1>
+            <h2 class="topdesigners__title">TOP DESIGNERS</h2>
+            <button class="btn--rounded">CHECK US!</button>
+        </div>
+        <p class="topdesigners__arrows">>></p>
+    </section>
+    <section class="stats">
+        <div class="stats__cell">
+            <div class="radial-progress">
+                <div class="circle circle--left">
+                    <div class="mask full">
+                        <div class="fill"></div>
+                    </div>
+                    <div class="mask half">
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <div class="inset inset--left">
+                    <h2>50</h2>
+                    <h3>BIG PROJECTS</h3>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Incididunt ut lab.</p>
+        </div>
+        <div class="stats__cell">
+            <div class="radial-progress">
+                <div class="circle circle--middle">
+                    <div class="mask full">
+                        <div class="fill"></div>
+                    </div>
+                    <div class="mask half">
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <div class="inset inset--middle">
+                    <h2>35</h2>
+                    <h3>CLIENTS</h3>
+                </div>
+            </div>
+            <p>Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor.</p>
+        </div>
+        <div class="stats__cell">
+            <div class="radial-progress">
+                <div class="circle circle--right">
+                    <div class="mask full">
+                        <div class="fill"></div>
+                    </div>
+                    <div class="mask half">
+                        <div class="fill"></div>
+                    </div>
+                </div>
+                <div class="inset inset--right">
+                    <h2>80</h2>
+                    <h3>MONTHS</h3>
+                </div>
+            </div>
+            <p>Hodor. Hodor hodor, hodor. Hodor hodor hodor hodor hodor. Hodor! Hodor!</p>
+        </div>
+    </section>
+    <section id="team" class="team">
+        <div class="team__box">
+            <h2><span class="separator"></span>Meet us<span class="separator"></span></h2>
+            <h3>OUR TEAM</h3>
+        </div>
+    </section>
+    <section class="team-list">
+        <div class="team-list__employee">
+            <div class="team-list__empty team-list__empty--left team-list__empty--adrianna">
+                <div class="rect rect--left"></div>
+            </div>
+            <div class="team-list__description team-list__description--right">
+                <h2>ADRIANNA</h2>
+                <h3>Senior graphic designer</h3>
+                <div class="team-list__separator"></div>
+                <p>She is the graphic designer with 3 years of professional experience.</p>
+            </div>
+            <div class="diamond"></div>
+        </div>
+        <div class="team-list__employee">
+            <div class="team-list__description team-list__description--left">
+                <h2>OLIVIA</h2>
+                <h3>Art Director</h3>
+                <div class="team-list__separator"></div>
+                <p>She is the art director with 8 years of professional experience.</p>
+            </div>
+            <div class="team-list__empty team-list__empty--right team-list__empty--olivia">
+                <div class="rect rect--right"></div>
+            </div>
+            <div class="diamond"></div>
+        </div>
+        <div class="team-list__employee">
+            <div class="team-list__empty team-list__empty--left team-list__empty--thomas">
+                <div class="rect rect--left"></div>
+            </div>
+            <div class="team-list__description team-list__description--right">
+                <h2>THOMAS</h2>
+                <h3>Software Engeneer</h3>
+                <div class="team-list__separator"></div>
+                <p>He is the software engeneer with 5 years of professional experience.</p>
+            </div>
+            <div class="diamond"></div>
+        </div>
+        <div class="team-list__employee">
+            <div class="team-list__description team-list__description--left">
+                <h2>TAYLOR</h2>
+                <h3>CEO</h3>
+                <div class="team-list__separator"></div>
+                <p>She is the boss in here.</p>
+            </div>
+            <div class="team-list__empty team-list__empty--right team-list__empty--taylor">
+                <div class="rect rect--right"></div>
+            </div>
+            <div class="diamond"></div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio__box">
+            <h2><span class="separator"></span>Check out our projects!<span class="separator"></span></h2>
+            <h3>PORTFOLIO</h3>
+        </div>
+    </section>
+    <section class="gallery">
+        <img src="IMG/project1.png">
+        <img src="IMG/project2.png">
+        <img src="IMG/project3.png">
+        <img src="IMG/project4.png">
+        <img src="IMG/project5.png">
+        <img src="IMG/project6.png">
+        <img src="IMG/project7.png">
+        <img src="IMG/project8.png">
+        <img src="IMG/project9.png">
+        <img src="IMG/project10.png">
+        <img src="IMG/project11.png">
+        <img src="IMG/project12.png">
+        <img src="IMG/project13.png">
+        <img src="IMG/project14.png">
+        <img src="IMG/project15.png">
+        <img src="IMG/project16.png">
+        <img src="IMG/project17.png">
+        <img src="IMG/project18.png">
+        <img src="IMG/project19.png">
+        <img src="IMG/project20.png">
+        <img src="IMG/project21.png">
+    </section>
+    <section id="brands" class="brands">
+        <div class="brands__box">
+            <h2><span class="separator"></span>We working for<span class="separator"></span></h2>
+            <h3>BRANDS</h3>
+        </div>
+    </section>
+    <section class="logos">
+        <div class="logos__item">
+            <img src="IMG/apple.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/microsoft.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/vw.png">
+        </div>    
+        <div class="logos__item">
+            <img src="IMG/ubuntu.png">
+        </div> 
+        <div class="logos__item">
+            <img src="IMG/ps.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/hp.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/lg.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/android.png">
+        </div>    
+        <div class="logos__item">
+            <img src="IMG/shell.png">
+        </div> 
+        <div class="logos__item">
+            <img src="IMG/dell.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/ea.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/intel.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/html.png">
+        </div>    
+        <div class="logos__item">
+            <img src="IMG/avg.png">
+        </div> 
+        <div class="logos__item">
+            <img src="IMG/nike.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/amd.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/kfc.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/nivea.png">
+        </div>    
+        <div class="logos__item">
+            <img src="IMG/hf2.png">
+        </div> 
+        <div class="logos__item">
+            <img src="IMG/insta.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/cooler.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/bosh.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/teamspeak.png">
+        </div>    
+        <div class="logos__item">
+            <img src="IMG/allegro.png">
+        </div> 
+        <div class="logos__item">
+            <img src="IMG/ups.png">
+        </div>
+        <div class="logos__item">
+            <img src="IMG/wordpress.png">
+        </div>    
+        <div class="logos__item">
+            <img src="IMG/m.png">
+        </div> 
+        <div class="logos__item">
+            <img src="IMG/mitsubishi.png">
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer__element">
+            <h2 class="footer__header">OUR TEAM</h2>
+            <div class="footer__separator"></div>
+            <p class="footer__info">We are the best company in the entire world!</p>
+        </div>
+        <div class="footer__element">
+            <h2 class="footer__header">ABOUT</h2>
+            <div class="footer__separator"></div>
+            <p class="footer__info">We are the best company in the entire world!</p>
+        </div>
+        <div class="footer__element">
+            <h2 class="footer__header">CONTACT</h2>
+            <div class="footer__separator"></div>
+            <p class="footer__info">free@template.com www.freetemplate.com tel. +48 123 456 79</p>
+        </div>
+        <div class="footer__copy">Copyright * DSNG free use!</div>
+    </section>
+</body>
+
+<script>
+    var transform_styles = ['-webkit-transform',
+                        '-ms-transform',
+                        'transform'];
+    window.randomize = function() {
+        var rotation = Math.floor(Math.random() * 180);
+        var fill_rotation = rotation;
+        for(i in transform_styles) {
+        $('.circle--left .fill, .circle--left .mask.full').css(transform_styles[i],
+                                'rotate(90deg)');
+        
+        }
+        for(i in transform_styles) {
+        $('.circle--middle .fill, .circle--middle .mask.full').css(transform_styles[i],
+                                'rotate(63deg)');
+        
+        }
+        for(i in transform_styles) {
+        $('.circle--right .fill, .circle--right .mask.full').css(transform_styles[i],
+                                'rotate(144deg)');
+        
+        }
+        
+    }
+    setTimeout(window.randomize, 200);
+    
+    /*MENU*/
+
+    const menu_button = document.querySelector('.ham');
+    const menu_list = document.querySelector('.menu-list');
+    const menu_items = document.querySelectorAll('.menu__item a')
+    console.log(menu_button);
+    console.log(menu_items);
+
+    function expand() {
+        if (menu_list.classList.contains('expanded')) {
+            menu_list.classList.remove('expanded');
+        }
+        else {
+            menu_list.classList.add('expanded');
+        }
+    }
+
+    function hide_menu() {
+        menu_list.classList.remove('expanded');
+    }
+
+    menu_button.addEventListener('click', expand);
+    
+    for (i=0; i<menu_items.length; i++) {
+        let item = menu_items[i];
+        item.addEventListener('click', hide_menu);
+    }
+
+</script>
+</html>
