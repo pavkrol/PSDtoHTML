@@ -12,6 +12,15 @@ body {
     padding: 0;
 }
 
+.anchor {
+    position: relative;
+}
+
+.fixed-target {
+    position: absolute;
+    top: -80px;
+}
+
 .header {
     background: white;
     display: grid;
@@ -92,7 +101,7 @@ button {
     text-decoration: none;
 }
 
-.menu-list a:visited {
+.menu-list a:visited, .menu-list a:link {
     color: white;
 }
 
@@ -388,18 +397,60 @@ button {
     position: relative;
 }
 
-.gallery img {
-    width: 100%;
+.gallery__img {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     transition: 0.5s;
     opacity: 0.6;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.gallery img:hover {
+.gallery__item:hover .gallery__img {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
     opacity: 1;
+}
+
+.gallery__item {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-areas: 1;
+}
+
+.gallery__overlay {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    transition: 0.2s;
+    transform: translateY(100%);
+}
+
+.gallery__item:hover .gallery__overlay {
+    transform: translateY(0);
+}
+
+.gallery__caption {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.gallery__caption::before, .gallery__caption::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    margin: 0 5px;
+    height: 0.5px;
+    background-color: #101010;
+    position: relative;
+    bottom: 25%;
 }
 
 .logos__item img {
