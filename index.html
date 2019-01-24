@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="Stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Dosis:300|Quicksand:300,400,700" rel="stylesheet"> 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <title>WebDev Challenge 8</title>
 </head>
 <body>
@@ -417,38 +416,45 @@
 
 <script>
     /*CIRCLE PROGRESS BAR*/
-    var transform_styles = ['-webkit-transform',
+    let scroll_position = 0;
+    
+    window.addEventListener('scroll', function(e) {
+        scroll_position = window.scrollY;
+        if (scroll_position > 315) {
+            setTimeout(draw_circles, 200);
+        }
+    });
+
+
+    const transform_styles = ['-webkit-transform',
                         '-ms-transform',
                         'transform'];
-    window.randomize = function() {
-        var rotation = Math.floor(Math.random() * 180);
-        var fill_rotation = rotation;
-        for(i in transform_styles) {
-        $('.circle--left .fill, .circle--left .mask.full').css(transform_styles[i],
-                                'rotate(90deg)');
+    function draw_circles() {
         
-        }
-        for(i in transform_styles) {
-        $('.circle--middle .fill, .circle--middle .mask.full').css(transform_styles[i],
-                                'rotate(63deg)');
-        
-        }
-        for(i in transform_styles) {
-        $('.circle--right .fill, .circle--right .mask.full').css(transform_styles[i],
-                                'rotate(144deg)');
-        
+        const left_circle = document.querySelectorAll('.circle--left .fill, .circle--left .mask.full');
+        console.log(left_circle);
+
+        for(i=0; i<3; i++) {
+            left_circle[i].style.transform = "rotate(90deg)";
         }
         
+        const middle_circle = document.querySelectorAll('.circle--middle .fill, .circle--middle .mask.full');
+        for(i=0; i<3; i++) {
+            middle_circle[i].style.transform = "rotate(63deg)";
+        }
+       
+        const right_circle = document.querySelectorAll('.circle--right .fill, .circle--right .mask.full');
+        for(i=0; i<3; i++) {
+            right_circle[i].style.transform = "rotate(144deg)";
+        }
+
     }
-    setTimeout(window.randomize, 200);
     
     /*MENU*/
 
     const menu_button = document.querySelector('.ham');
     const menu_list = document.querySelector('.menu-list');
     const menu_items = document.querySelectorAll('.menu__item a')
-    console.log(menu_button);
-    console.log(menu_items);
 
     function expand() {
         if (menu_list.classList.contains('expanded')) {
