@@ -160,6 +160,12 @@ button {
     font-size: 18px;
     letter-spacing: 2px;
     margin-top: 25px;
+    cursor: pointer;
+}
+
+.btn--rounded:hover {
+    background-color: #FFFFFF;
+    color: #101010;
 }
 
 .separator {
@@ -175,6 +181,11 @@ button {
     justify-items: center;
     align-items: center;
     writing-mode: vertical-lr;
+    text-decoration: none;
+}
+
+.topdesigners__arrows:hover, .topdesigners__arrows:visited, .topdesigners__arrows:link {
+    color: white;
 }
 
 .stats {
@@ -240,7 +251,7 @@ button {
 
 .team__box, .portfolio__box, .brands__box {
     border: 2px solid white;
-    height: 100%;
+    height: calc(100% - 4px);
     display: grid;
     justify-items: center;
     align-content: center;
@@ -607,4 +618,176 @@ button {
 
 .circle--right .mask .fill {
     background-color: #152b3c;
+}
+
+@media (max-width: 780px) {
+    .header {
+        grid-template-columns: 1fr 40px;
+    }
+    
+    .header__logo {
+        grid-column: 1;
+        padding-left: 15px;
+    }
+    
+    .header__nav {
+        background: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 15px;
+        justify-items: center;
+    }
+    
+    .header__nav span {
+        display: none;
+    }
+
+    .header__social {
+        display: none;
+    }
+    
+    .ham {
+        width: 20px;
+        height: 18px;
+        background: none;
+        position: relative;
+        cursor: pointer;
+    }
+    .ham:before {
+        background: #101010;
+        box-shadow: 0 7px 0 0 #101010, 0 14px 0 0 #101010;
+    }
+    
+    .menu-list {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu__item {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .stats {
+        grid-template-columns: 1;
+        justify-items: center;
+    }
+    
+    .stats__cell {
+        grid-column: -1 / 1;
+        justify-items: center;
+        grid-gap: 10px;
+    }
+    
+    .team, .portfolio, .brands {
+        padding: 20px;
+    }
+
+    .team-list {
+        padding: 50px 0;
+    }
+
+    .team-list__employee {
+        height: 520px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .team-list__empty--left, .team-list__empty--right {
+        padding: 0 20px 20px 20px;
+    }
+
+    .rect {
+        border-bottom: 2px solid;
+        border-top: 0;
+        height: calc(100% - 2px);
+        border-color: white;
+    }
+    
+    .rect--left, .rect--right {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+    }
+    
+    .diamond {
+        top: calc(50% - 25px);
+    }
+
+    .team-list__description {
+        height: calc(100% - 22px);
+        border-top: 2px solid black;
+        border-bottom: 0;
+        order: -1;
+        z-index: 1;
+    }
+    
+    .team-list__description--right, .team-list__description--left {
+        margin: 20px 20px 0 20px;
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr) 50px;
+        grid-gap: 40px; 
+        padding-top: 40px;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+
+    .topdesigners__subtitle {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    .topdesigners__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 500px) {
+    .team-list__description p {
+        font-size: 15px;
+    }
+
+    .team-list__description h2 {
+        font-size: 28px;
+    }
+    
+    .team-list__description h3 {
+        font-size: 15px;
+    }
+
+    .team-list__separator {
+        background-color: #f34739;
+        height: 2px;
+        width: 100px;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .topdesigners__subtitle {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    
+    .topdesigners__title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .btn--rounded {
+        height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
 }
