@@ -118,7 +118,7 @@ button {
 
 .topdesigners {
     height: calc(100vh - 80px);
-    background-image: url(IMG/topdesigners.png);
+    background-image: url(IMG/topdesigners.jpg);
     background-size: cover;
     color: white;
     display: grid;
@@ -224,7 +224,7 @@ button {
 
 .team {
     height: 200px;
-    background-image: url(IMG/our_team.png);
+    background-image: url(IMG/our_team.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -233,7 +233,7 @@ button {
 
 .portfolio {
     height: 200px;
-    background-image: url(IMG/portfolio_bgd.png);
+    background-image: url(IMG/portfolio_bgd.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -242,7 +242,7 @@ button {
 
 .brands {
     height: 200px;
-    background-image: url(IMG/brands.png);
+    background-image: url(IMG/brands.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -316,19 +316,19 @@ button {
 }
 
 .team-list__empty--adrianna {
-    background-image: url(IMG/adriana.png);
+    background-image: url(IMG/adriana.jpg);
 }
 
 .team-list__empty--olivia {
-    background-image: url(IMG/olivia.png);
+    background-image: url(IMG/olivia.jpg);
 }
 
 .team-list__empty--thomas {
-    background-image: url(IMG/thomas.png);
+    background-image: url(IMG/thomas.jpg);
 }
 
 .team-list__empty--taylor {
-    background-image: url(IMG/taylor.png);
+    background-image: url(IMG/taylor.jpg);
 }
 
 .rect {
