@@ -403,6 +403,7 @@ button {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     align-items: stretch;
     position: relative;
 }
@@ -428,8 +429,6 @@ button {
 .gallery__item {
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1;
-    grid-template-areas: 1;
 }
 
 .gallery__overlay {
@@ -542,6 +541,7 @@ button {
     width: 220px;
     height: 220px;
     border-radius: 50%;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: -webkit-transform 1s;
     transition: -ms-transform 1s;
@@ -553,6 +553,7 @@ button {
     width: 220px;
     height: 220px;
     border-radius: 50%;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transition: -webkit-transform 1s;
     transition: -ms-transform 1s;
